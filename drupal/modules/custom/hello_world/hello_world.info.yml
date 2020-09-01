@@ -1,0 +1,5 @@
+name: 'hello_world'
+type: module
+description: 'create a hello world page'
+core: 8.x
+package: 'Custom'

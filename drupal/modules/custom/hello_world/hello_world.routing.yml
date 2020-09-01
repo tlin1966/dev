@@ -1,0 +1,24 @@
+hello_world.hello_world_controller_hello:
+  path: '/hello_world'
+  defaults:
+    _controller: '\Drupal\hello_world\Controller\HelloWorldController::hello'
+    _title: 'sayHello'
+  requirements:
+    _permission: 'access content'
+
+hello_world.salutation_configuration_form:
+  path: '/admin/config/salutation-configuration'
+  defaults:
+    _form: '\Drupal\hello_world\Form\SalutationConfigurationForm'
+    _title: 'Salutation Configuration'
+  requirements:
+    _access: 'TRUE'
+    _permission: 'administer site configuration'
+
+hello_world.hello_world_controller_test:
+  path: '/service_test'
+  defaults:
+    _controller: '\Drupal\hello_world\Controller\ServiceTest::hello'
+    _title: 'My Test'
+  requirements:
+    _permission: 'access content'
